@@ -1,0 +1,23 @@
+body{
+    background-color: #F8F8F8;
+    margin: 0;
+}
+
+nav{
+    height: 75px;
+    border: 1px solid blue;
+}
+
+#container{
+    border: 1px solid red;
+    min-height: 800px;
+}
+
+#logo{
+    float: left;
+}
+
+#logo img{
+    height: 70px;
+    width: 112px;
+}
