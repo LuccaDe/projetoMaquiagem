@@ -13,11 +13,10 @@ nav{
     min-height: 800px;
 }
 
-#logo{
-    float: left;
-}
 
-#logo img{
+#logo{
     height: 70px;
     width: 112px;
+    float: left;
+    border: 3px solid green;
 }

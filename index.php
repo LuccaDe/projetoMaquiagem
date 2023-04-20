@@ -4,14 +4,10 @@
 
 <div id="container">
     <header>
-        <div id="logo">
-            <a href="#" class="navbar-brand">
-                <img src="img/logo2.png">
+        <nav class="navbar navbar-expand-lg" >
+            <a href="#" class="navbar-brand" href="<? $BASE_URL ?>index.php">
+                <img id="logo" src="img/logo2.png">
             </a>
-        </div>
-
-        <nav>
-            <p>Teste git</p>
         </nav>
     </header>
 </div>
