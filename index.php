@@ -14,7 +14,7 @@
             <th scope="col">#</th>
             <th scope="col">Produto</th>
             <th scope="col">Valor (R$)</th>
-            <th scope="col">Imagem teste</th>
+            <th scope="col">Imagem teste 2</th>
             <th scope="col"></th>
           </tr>
         </thead>
