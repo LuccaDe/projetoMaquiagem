@@ -1,9 +1,8 @@
 <?php
-    include_once("templates/header.php");
-    include_once("config/processLA.php")
+    include_once("templates/header.php")
 ?>
 
-<h1> PÁGINA INICIAL (LISTAR TODOS) </h1>
+<h1> PÁGINA DE ADIÇÃO DE PRODUTOS NO BANCO DE DADOS </h1>
 
 </br>
 
