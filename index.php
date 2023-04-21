@@ -14,8 +14,7 @@
     <nav class="navbar">
       <div class="navbar-menu">
         <h5>NAVEGAÇÃO PROVISÓRIA</h5>
-        <a href="<?php $BASE_URL?>index.php">INDEX</a>
-        <a href="<?php $BASE_URL?>create.php">CREATE</a>
+        <a href="<?php $BASE_URL?>admin.php">ADMIN</a>
       </div>
     </nav>
 
