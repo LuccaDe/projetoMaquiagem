@@ -1,5 +1,7 @@
 <?php
     include_once('config/url.php');
+    include_once("config/process.php");
+
 
     if(isset($_SESSION['msg'])) {
         $printMsg = $_SESSION['msg'];
@@ -10,7 +12,7 @@
 <!Doctype html>
     <html lang="pt-br">
         <head>
-            <meta charset="UTF-8">
+            <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <title>Maquiagems</title>
@@ -23,6 +25,10 @@
 
             <!--Css-->
             <link rel="stylesheet" href="css/style.css">
+
+            <!--JavaScript-->
+            <script src="js/script.js"></script>
+
         </head>
 
         <body>

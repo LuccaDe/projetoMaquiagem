@@ -1,6 +1,6 @@
 <?php
     include_once("templates/header.php");
-    include_once("config/processLA.php");
+
 ?>
 
 <div class="container">
@@ -34,7 +34,7 @@
 
                 </br>
 
-                <a href="#" class="btn btn-outline-primary">Detalhes</a>
+                <a href="<?php $BASE_URL?>show.php?id=<?= $produto["id"] ?>" class="btn btn-outline-primary">Detalhes</a>
               </div>
           </div>
 
@@ -44,6 +44,7 @@
       </br>  
       <p id="empty-list-text">Ainda não há produtos em seu catálogo, <a href="<?php $BASE_URL?>create.php">clique aqui para adicionar</a>.</p>
     <?php endif; ?>
+
   </div>
 <?php
   include_once("templates/footer.php");
