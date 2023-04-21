@@ -3,19 +3,13 @@ body{
     margin: 0;
 }
 
-nav{
-    height: 75px;
-    border: 1px solid blue;
+.card{
+    float: left;
 }
 
-#container{
-    border: 1px solid red;
-    min-height: 800px;
-}
-
-
-#logo{
-    height: 70px;
-    width: 112px;
-    border: 3px solid green;
+.card img{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 15px;
 }
