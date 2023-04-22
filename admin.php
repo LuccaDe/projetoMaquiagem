@@ -12,7 +12,7 @@
 <form class="form-inline">
     <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
     <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
-    <a href="<?php $BASE_URL?>create.php"><input class="btn btn-primary" type="button" value="Logar"></a>
+    <a href="<?php $BASE_URL?>adminPass.php"><input class="btn btn-outline-primary" type="button" value="Login"></a>
 </form>
 
 <?php

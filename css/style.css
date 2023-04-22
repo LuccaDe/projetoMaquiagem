@@ -3,6 +3,12 @@ body{
     margin: 0;
 }
 
+.form-padrao{
+    width: 500px;
+    margin: 0 auto;
+    background-color: red;
+}
+
 .card{
     float: left;
 }
