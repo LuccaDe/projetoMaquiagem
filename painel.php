@@ -31,7 +31,7 @@
 
                 </br>
 
-                <a href="<?php $BASE_URL?>show.php?id=<?= $produto["id"] ?>" class="btn btn-outline-success">Editar</a>
+                <a href="<?= $BASE_URL ?>edit.php?id=<?= $produto["id"] ?>" class="btn btn-outline-success">Editar</a>
                 <a href="<?php $BASE_URL?>show.php?id=<?= $produto["id"] ?>" class="btn btn-outline-danger">Excluir</a>
               </div>
           </div>

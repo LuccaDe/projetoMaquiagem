@@ -32,12 +32,45 @@
               $error = $e->getMessage();
               echo "Erro: $error";
             }
+
+            header("Location:" . $BASE_URL . "../index.php");
+
+        }else if($data["type"] === "edit") {
+
+            $nome = $data["nome"];
+            $valor = $data["valor"];
+            $img = $data["img"];
+            $id = $data["id"];
+      
+            $query = "UPDATE produtos SET nome = :nome, valor = :valor, img = :img WHERE id = :id";
+      
+      
+            $stmt = $conn->prepare($query);
+      
+      
+            $stmt->bindParam(":nome", $nome);
+            $stmt->bindParam(":valor", $valor);
+            $stmt->bindParam(":img", $img);
+            $stmt->bindParam(":id", $id);
+      
+      
+            try {
+      
+      
+              $stmt->execute();
+              $_SESSION["msg"] = "Produto atualizado com sucesso!";
+         
+            } catch(PDOException $e) {
+              // erro na conexão
+              $error = $e->getMessage();
+              echo "Erro: $error";
+            }
+
+            header("Location:" . $BASE_URL . "../index.php");
       
           }
-      
-          header("Location:" . $BASE_URL . "../index.php");
     
-    }else{
+        }else{
 
         $id;
 
