@@ -32,7 +32,12 @@
                 </br>
 
                 <a href="<?= $BASE_URL ?>edit.php?id=<?= $produto["id"] ?>" class="btn btn-outline-success">Editar</a>
-                <a href="<?php $BASE_URL?>show.php?id=<?= $produto["id"] ?>" class="btn btn-outline-danger">Excluir</a>
+
+                <form class="delete-form" action="<?= $BASE_URL ?>/config/process.php" method="POST">
+                  <input type="hidden" name="type" value="delete">
+                  <input type="hidden" name="id" value="<?= $produto["id"] ?>">
+                  <button type="submit" class="btn btn-outline-danger" id="delete">Excluir</button>
+                </form>
               </div>
           </div>
 

@@ -3,6 +3,10 @@ body{
     margin: 0;
 }
 
+#delete{
+    float: right;
+}
+
 .form-padrao{
     width: 500px;
     margin: 0 auto;

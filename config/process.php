@@ -67,6 +67,29 @@
             }
 
             header("Location:" . $BASE_URL . "../index.php");
+
+        }else if($data["type"] === "delete") {
+
+            $id = $data["id"];
+      
+            $query = "DELETE FROM produtos WHERE id = :id";
+      
+            $stmt = $conn->prepare($query);
+      
+            $stmt->bindParam(":id", $id);
+           
+            try {
+      
+              $stmt->execute();
+              $_SESSION["msg"] = "Produto removido com sucesso!";
+         
+            } catch(PDOException $e) {
+              // erro na conexão
+              $error = $e->getMessage();
+              echo "Erro: $error";
+            }
+
+            header("Location:" . $BASE_URL . "../painel.php");
       
           }
     
