@@ -3,7 +3,7 @@
     $host = "localhost";
     $dbname = "loja";
     $user = "root";
-    $pass = "root";
+    $pass = "";
 
     try {
 

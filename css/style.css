@@ -1,5 +1,5 @@
 body{
-    background-color: #F8F8F8;
+    background-color: #FDF3F4;
     margin: 0;
 }
 
@@ -13,8 +13,16 @@ body{
     background-color: red;
 }
 
-.card{
+.imagem-icon-desc
+{
     float: left;
+    margin-left: 5px;
+}
+
+.card{
+    height: 300px;
+    min-height: 300px;
+    margin-bottom: 15px;
 }
 
 .card img{
@@ -24,3 +32,103 @@ body{
     margin-top: 15px;
 }
 
+header{
+    display: flex;
+}
+
+.cabecalho-imagem{
+    width: 350px;
+    height: 200px;
+}
+
+.cabecalho-menu-item{
+    float: left;
+    color: #e866cc;
+    margin-top: 100px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.cabecalho-menu-item:hover{
+    text-decoration:solid;
+    background-color: #e866cc;
+    color:white;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.conteudo-principal{
+    margin-bottom: 10px;
+}
+
+.conteudo-principal-imagem{
+    width: 100%;
+}
+   
+.card-title{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #6A6A6B;
+}
+
+.card-subtitle{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:rgb(190, 40, 190);
+}
+
+.imagem-icon{
+    float: left;
+}
+
+.conteudo-contato{
+}
+.rodape{
+    margin-top: 50px;
+}
+
+h2{
+    color: #db33b7;
+    font-size:30px;
+    margin-left: 510px;
+}
+
+form{
+	color:#db33b7;
+}
+
+input[type=text]{ /*somente os inputs que tiverem o type = text*/
+	width:400px;
+	background-color:#EEE;
+	border:solid 1px #cccccc;
+}
+
+input[type=submit]{
+	width:100px;
+	height:30px;
+	background-color:#db33b7;
+	border:6px;
+	color:white;
+	margin-top:5px;	
+}
+
+textarea{
+	width:450px;
+	height:160px;
+	background-color:#EEE;
+	border:solid 1px #cccccc;
+}
+
+.btn-rosa{
+    color: #db33b7;
+    border-color:#db33b7;
+}
+
+.btn-rosa:hover{
+    color: white;
+    background-color: #db33b7;
+    border-color: #cccccc;
+}
