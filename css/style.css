@@ -1,9 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     background-color: #FDF3F4;
     margin: 0;
 }
 
-#delete{
+
+#delete{ /*painel.php*/
     float: right;
 }
 
@@ -40,6 +46,7 @@ header{
     width: 350px;
     height: 200px;
 }
+
 
 .cabecalho-menu-item{
     float: left;
@@ -84,8 +91,6 @@ header{
     float: left;
 }
 
-.conteudo-contato{
-}
 .rodape{
     margin-top: 50px;
 }
@@ -93,11 +98,18 @@ header{
 h2{
     color: #db33b7;
     font-size:30px;
-    margin-left: 510px;
+    text-align: center;
+}
+
+#main-title{
+    color: #db33b7;
+    font-size:30px;
+    text-align: center;
 }
 
 form{
 	color:#db33b7;
+    text-align: center;
 }
 
 input[type=text]{ /*somente os inputs que tiverem o type = text*/
@@ -132,3 +144,63 @@ textarea{
     background-color: #db33b7;
     border-color: #cccccc;
 }
+
+.titulo-pagina-admin{
+    color: #db33b7;
+    font-size:30px;
+    text-align: center;
+    margin: 100px;
+}
+
+.menu-item-home{
+    color: #e866cc;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.menu-item-home:hover{
+    text-decoration:solid;
+    background-color: #e866cc;
+    color:white;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.btn-rosa-admin{
+    color: #db33b7;
+    border-color:#db33b7;
+}
+
+.btn-rosa-admin:hover{
+    color: white;
+    background-color: #db33b7;
+    border-color: #cccccc;
+}
+
+.pagina-edicao-produtos{
+    color: #db33b7;
+    font-size:30px;
+    text-align: center;
+    margin: 100px;
+}
+
+.menu-item-pagina-admin{
+    color: #e866cc;
+    margin-top: 100px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.menu-item-pagina-admin:hover{
+    text-decoration:solid;
+    background-color: #e866cc;
+    color:white;
+    padding: 10px;
+    border-radius: 2px;
+}
+

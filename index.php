@@ -8,7 +8,7 @@
   <nav class="cabecalho-menu">
     <a class="cabecalho-menu-item" href="index.php">Home</a> <!--tag de âncora-->
     <a class="cabecalho-menu-item"href="quemSomos.html">Quem Somos</a>
-    <a class="cabecalho-menu-item"href="#contato">Contato</a>
+    <a class="cabecalho-menu-item"href="#contatos">Contato</a>
     <a class="cabecalho-menu-item"href="<?php $BASE_URL?>admin.php">Administrador</a>
   </nav>	
 </header>
@@ -33,7 +33,7 @@
   <div class="col-sm-1 col-md-4">
     <img class="imagem-icon" src="img/ico-cartao-de-credito.webp" alt="Imagem ícon do cartão">
     <div class="imagem-icon-desc">
-      <p>Parcelamos em até 12% s/juros</p>
+      <p>Parcelamos em até 12x s/juros</p>
     </div>
   </div>
   <div class="col-sm-1 col-md-4">
@@ -48,7 +48,7 @@
 
 <div class="row">
   <div class="col-12">
-    <h2 id="main-title">Meus Produtos</h1>
+    <h2 id="main-title">MEUS PRODUTOS</h1>
   </div>
 </div>
 
