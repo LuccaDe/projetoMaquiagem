@@ -3,6 +3,7 @@
 ?>
 
 <nav class="navbar navbar-expand-md navbar-light">
+
   <a href="<?php $BASE_URL?>index.php" class="navbar-brand"><img src="img/logo.png" alt="Imagem logo"></a>
 
   <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
@@ -50,10 +51,6 @@
     </div>
   </div>
 </section>
-  
-<?php if(isset($printMsg) && $printMsg != ''): ?>
-  <p id="msg"><?= $printMsg ?></p>
-<?php endif; ?>
 
 <br/>
 
@@ -83,7 +80,7 @@
 <div id="prateleira">
   <div class="row">
     <div class="col-12">
-      <h2 id="main-title">MEUS PRODUTOS</h1>
+      <h2 id="main-title">PRODUTOS</h1>
     </div>
   </div>
 

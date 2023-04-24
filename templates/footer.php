@@ -7,8 +7,8 @@
     <script src="js/script.js"></script>
     </div>
 
-    <footer class="rodape">
-         © 2023 Fn Beauty - Todos os direitos reservados.     
+    <footer class="mt-auto">
+        <p class="mt-auto">© 2023 Fn Beauty - Todos os direitos reservados.</p>  
     </footer>
 </body>
 </html>

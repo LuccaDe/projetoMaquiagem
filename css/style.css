@@ -2,17 +2,18 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body{
     background-color: #FDF3F4;
     margin: 0;
     color:#cccccc;
+    height: auto;
 }
 
 footer{
     text-align: center;
     font-weight: bold;
     color: #f0bcbe;
+    width: 100%;
 }
 
 label{
@@ -64,7 +65,6 @@ header{
     height: 200px;
 }
 
-
 .cabecalho-menu-item{
     float: left;
     color: #e866cc;
@@ -109,10 +109,6 @@ header{
     float: left;
 }
 
-.rodape{
-    margin-top: 50px;
-}
-
 h2{
     color: #f0bcbe;
     font-size:30px;
@@ -149,7 +145,7 @@ input[type=submit]{
 #contatos textarea{
 	width:450px;
 	height:160px;
-	background-color:#f4f2f2;    ;
+	background-color:#f4f2f2;
 	border: solid 1px #f0bcbe;
 }
 
