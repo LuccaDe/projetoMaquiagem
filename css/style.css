@@ -8,14 +8,28 @@ body{
     margin: 0;
 }
 
+footer{
+    text-align: center;
+    font-weight: bold;
+    color: #f0bcbe;
+}
+
+label{
+    color: #f0bcbe;
+    font-weight: bold;
+}
 
 #delete{ /*painel.php*/
     float: right;
 }
 
+#nome-produto{
+    min-height: 160px;
+}
+
 #prateleira{
     border: 2px solid #f0bcbe;
-    padding: 5px;
+    padding: 10px;
 }
 
 .imagem-icon-desc
@@ -28,6 +42,10 @@ body{
     height: 300px;
     min-height: 300px;
     margin-bottom: 15px;
+}
+
+#cardP{
+    border: 2px solid #f0bcbe;
 }
 
 .card img{
@@ -96,9 +114,10 @@ header{
 }
 
 h2{
-    color: #db33b7;
+    color: #f0bcbe;
     font-size:30px;
     text-align: center;
+    font-weight: bold;
 }
 
 #main-title{
@@ -115,7 +134,7 @@ form{
 input[type=text]{ /*somente os inputs que tiverem o type = text*/
 	width:400px;
 	background-color:#EEE;
-	border:solid 1px #cccccc;
+	border:solid 1px #f0bcbe;
 }
 
 input[type=submit]{
@@ -135,13 +154,13 @@ textarea{
 }
 
 .btn-rosa{
-    color: #db33b7;
-    border-color:#db33b7;
+    color: #ecbcc4;
+    border-color: #ecbcc4;
 }
 
 .btn-rosa:hover{
     color: white;
-    background-color: #db33b7;
+    background-color: #ecbcc4;
     border-color: #cccccc;
 }
 
@@ -204,3 +223,7 @@ textarea{
     border-radius: 2px;
 }
 
+#contatos{
+    border: 2px solid #f0bcbe;
+    padding: 10px;
+}

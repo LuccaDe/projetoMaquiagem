@@ -6,10 +6,11 @@
   <!--src = fonte // alt= texto alternativo, caso a imagem não carregue-->
   <img class="cabecalho-imagem" src="img/logo.png" alt="Imagem logo">
   <nav class="cabecalho-menu">
-    <a class="cabecalho-menu-item" href="index.php">Home</a> <!--tag de âncora-->
-    <a class="cabecalho-menu-item"href="quemSomos.html">Quem Somos</a>
-    <a class="cabecalho-menu-item"href="#contatos">Contato</a>
-    <a class="cabecalho-menu-item"href="<?php $BASE_URL?>admin.php">Administrador</a>
+        <a class="cabecalho-menu-item" href="index.php">Home</a> <!--tag de âncora-->
+        <a class="cabecalho-menu-item" href="quemSomos.html">Quem Somos</a>
+        <a class="cabecalho-menu-item" href="#contatos">Contato</a>
+        <a class="cabecalho-menu-item" href="<?php $BASE_URL?>admin.php">Administrador</a>
+    </ul>
   </nav>	
 </header>
 
@@ -80,10 +81,10 @@
   <div class="row">
     <?php foreach($produtos as $produto): ?>
     <div class="col-sm-1 col-md-3">
-      <div class="card">
+      <div class="card" id="cardP">
         <img src="<?= $produto["img"] ?>" class="card-img-top">
           <div class="card-body">
-          <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
+            <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
           <h4 class="card-subtitle">Valor: R$<?= $produto["valor"]?></h4>
 
           </br>
@@ -107,24 +108,21 @@
       <h2>CONTATO</h2>            
       <form>
         <label for="nome-contato">Nome:</label>
-        <input type="text" id="nome-contato" class="form-control">
+        <input type="text" id="nome-contato" class="form-control mr-auto ml-auto">
 
         <label for="email-contato">E-mail:</label>
-        <input type="text" id="email-contato" class="form-control">
+        <input type="text" id="email-contato" class="form-control mr-auto ml-auto">
 
         <label for="msg-contato">Mensagem:</label>
         <textarea id="msg-contato" class="form-control"></textarea>
               
-        <button type="submit" class="btn btn-outline-primary btn-rosa">Enviar</button>
-              
+        <button type="submit" class="btn btn-outline-primary btn-rosa mt-4">Enviar</button>   
       </form>
     </div>
   </div>
 </div>
 
-<footer class="rodape">
-  © 2023 Fn Beauty - Todos os direitos reservados.        
-</footer>
+
 
 <?php
   include_once("templates/footer.php");

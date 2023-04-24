@@ -6,5 +6,9 @@
     <!--JavaScript-->
     <script src="js/script.js"></script>
     </div>
+
+    <footer class="rodape">
+         © 2023 Fn Beauty - Todos os direitos reservados.     
+    </footer>
 </body>
 </html>
