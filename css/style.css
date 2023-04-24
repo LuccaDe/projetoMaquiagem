@@ -6,6 +6,7 @@ html{
 body{
     background-color: #FDF3F4;
     margin: 0;
+    color:#cccccc;
 }
 
 footer{
@@ -32,8 +33,7 @@ label{
     padding: 10px;
 }
 
-.imagem-icon-desc
-{
+.imagem-icon-desc{
     float: left;
     margin-left: 5px;
 }
@@ -146,11 +146,11 @@ input[type=submit]{
 	margin-top:5px;	
 }
 
-textarea{
+#contatos textarea{
 	width:450px;
 	height:160px;
-	background-color:#EEE;
-	border:solid 1px #cccccc;
+	background-color:#f4f2f2;    ;
+	border: solid 1px #f0bcbe;
 }
 
 .btn-rosa{
@@ -161,7 +161,7 @@ textarea{
 .btn-rosa:hover{
     color: white;
     background-color: #ecbcc4;
-    border-color: #cccccc;
+    border-color: #ecbcc4;
 }
 
 .titulo-pagina-admin{
@@ -226,4 +226,13 @@ textarea{
 #contatos{
     border: 2px solid #f0bcbe;
     padding: 10px;
+}
+
+#empty-list-text{
+    text-align: center;
+}
+
+#empty-list-text a{
+    font-weight: bold;
+    color: #f0bcbe;
 }

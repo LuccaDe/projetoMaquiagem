@@ -2,21 +2,33 @@
   include_once("templates/header.php");
 ?>
 
-<header class="cabecalho">
-  <!--src = fonte // alt= texto alternativo, caso a imagem não carregue-->
-  <img class="cabecalho-imagem" src="img/logo.png" alt="Imagem logo">
-  <nav class="cabecalho-menu">
-        <a class="cabecalho-menu-item" href="index.php">Home</a> <!--tag de âncora-->
-        <a class="cabecalho-menu-item" href="quemSomos.html">Quem Somos</a>
-        <a class="cabecalho-menu-item" href="#contatos">Contato</a>
-        <a class="cabecalho-menu-item" href="<?php $BASE_URL?>admin.php">Administrador</a>
+<nav class="navbar navbar-expand-md navbar-light">
+  <a href="<?php $BASE_URL?>index.php" class="navbar-brand"><img src="img/logo.png" alt="Imagem logo"></a>
+
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="nav-target">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>index.php">Home</a> <!--tag de âncora-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="quemSomos.html">Quem Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contatos">Contato</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>admin.php">Administrador</a>
+      </li>
     </ul>
-  </nav>	
-</header>
+  </div>
+</nav>	
 
 <section class="conteudo-principal" id="banner">
   <div class="carousel slide" id="carousel-indicadores" data-ride="carousel">
-
     <ol class="carousel-indicators">
       <li data-target="#carousel-indicadores" data-slide-to="0"></li>
       <li data-target="#carousel-indicadores" data-slide-to="1"></li>
@@ -49,7 +61,7 @@
   <div>
     <img class="imagem-icon" src="img/ico-frete.webp" alt="Imagem ícon de frete">
     <div class="imagem-icon-desc">
-      <p>Frete grátis para todo o Brasil</p>
+      <p class="texto-icon">Frete grátis para todo o Brasil</p>
     </div>
   </div>
   <div class="mr-auto ml-auto">
@@ -82,7 +94,7 @@
     <?php foreach($produtos as $produto): ?>
     <div class="col-sm-1 col-md-3">
       <div class="card" id="cardP">
-        <img src="<?= $produto["img"] ?>" class="card-img-top">
+        <img src="<?= $produto["img"]?>" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
           <h4 class="card-subtitle">Valor: R$<?= $produto["valor"]?></h4>
@@ -114,7 +126,7 @@
         <input type="text" id="email-contato" class="form-control mr-auto ml-auto">
 
         <label for="msg-contato">Mensagem:</label>
-        <textarea id="msg-contato" class="form-control"></textarea>
+        <textarea id="msg-contato" class="form-control mr-auto ml-auto"></textarea>
               
         <button type="submit" class="btn btn-outline-primary btn-rosa mt-4">Enviar</button>   
       </form>
