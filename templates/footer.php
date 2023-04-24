@@ -7,7 +7,7 @@
     <script src="js/script.js"></script>
     </div>
 
-    <footer class="mt-auto">
+    <footer class="mt-5">
         <p class="mt-auto">© 2023 Fn Beauty - Todos os direitos reservados.</p>  
     </footer>
 </body>

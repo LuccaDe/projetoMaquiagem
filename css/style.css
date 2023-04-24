@@ -21,10 +21,6 @@ label{
     font-weight: bold;
 }
 
-#delete{ /*painel.php*/
-    float: right;
-}
-
 #nome-produto{
     min-height: 160px;
 }
@@ -45,8 +41,9 @@ label{
     margin-bottom: 15px;
 }
 
-#cardP{
+.cardP{
     border: 2px solid #f0bcbe;
+    text-align: center;
 }
 
 .card img{
@@ -102,7 +99,7 @@ header{
 .card-subtitle{
     font-family: sans-serif;
     font-size: 20px;
-    color:rgb(190, 40, 190);
+    color:#6A6A6B;
 }
 
 .imagem-icon{
@@ -129,7 +126,16 @@ form{
 
 input[type=text]{ /*somente os inputs que tiverem o type = text*/
 	width:400px;
-	background-color:#EEE;
+	border:solid 1px #f0bcbe;
+}
+
+input[type=password]{
+	width:400px;
+	border:solid 1px #f0bcbe;
+}
+
+input[type=number]{
+	width:400px;
 	border:solid 1px #f0bcbe;
 }
 
@@ -145,7 +151,6 @@ input[type=submit]{
 #contatos textarea{
 	width:450px;
 	height:160px;
-	background-color:#f4f2f2;
 	border: solid 1px #f0bcbe;
 }
 
@@ -231,4 +236,22 @@ input[type=submit]{
 #empty-list-text a{
     font-weight: bold;
     color: #f0bcbe;
+}
+
+#adm{
+    border: 2px solid #f0bcbe;
+    padding: 10px;
+    min-height: 600px;
+}
+
+#cadastro{
+    border: 2px solid #f0bcbe;
+    padding: 10px;
+    min-height: 600px;
+}
+
+#editar{
+    border: 2px solid #f0bcbe;
+    padding: 10px;
+    min-height: 600px;
 }

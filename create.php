@@ -2,39 +2,57 @@
     include_once("templates/header.php")
 ?>
 
-<h1> PÁGINA DE ADIÇÃO DE PRODUTOS NO BANCO DE DADOS </h1>
+<nav class="navbar navbar-expand-md navbar-light">
 
-</br>
+  <a href="<?php $BASE_URL?>index.php" class="navbar-brand"><img src="img/logo.png" alt="Imagem logo"></a>
 
-<nav class="navbar">
-    <h5>NAVEGAÇÃO PROVISÓRIA</h5>
-    <a href="<?php $BASE_URL?>index.php">INDEX</a>
-    <a href="<?php $BASE_URL?>create.php">CADASTRO DE PRODUTOS</a>
-    <a href="<?php $BASE_URL?>painel.php">EDIÇÃO E EXCLUSÃO DE PRODUTOS</a>
-</nav>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<h1>Cadastrar Produto</h1>
+  <div class="collapse navbar-collapse" id="nav-target">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>index.php">Home</a> <!--tag de âncora-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>create.php">Cadastro de Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>painel.php">Edição e Exclusão de Produtos</a>
+      </li>
+    </ul>
+  </div>
+</nav>	
 
-    <form action="<?= $BASE_URL?>config/process.php" method="POST">
+<br>
+<br>
+
+
+<div id="cadastro" class="mb-5 d-flex align-items-center justify-content-center">
+    <h2 class="mr-5">Cadastrar Produto</h2>
+
+    <form action="<?= $BASE_URL?>config/process.php" method="POST" class="ml-5">
         <input type="hidden" name="type" value="create"></input>
 
         <div class="form-group">
             <label for="nome-produto">Nome do produto:</label>
-            <input class="form-control" type="text" name="nome" id="nome-produto">
+            <input class="form-control mr-auto ml-auto" type="text" name="nome" id="nome-produto">
         </div>
 
         <div class="form-group">
             <label for="valor-produto">Valor(R$):</label>
-            <input class="form-control" type="number" name="valor" id="valor-produto">
+            <input class="form-control mr-auto ml-auto" type="number" name="valor" id="valor-produto">
         </div>
 
         <div class="form-group">
             <label for="img-produto">Imagem do produto (URL):</label>
-            <input class="form-control" type="text" name="img" id="img-produto">
+            <input class="form-control mr-auto ml-auto" type="text" name="img" id="img-produto">
         </div>
 
-            <button type="submit" class="btn btn-outline-primary">Cadastrar</button>
+            <button type="submit" class="btn btn-outline-primary btn-rosa mt-3">Cadastrar</button>
     </form>
+</div>
 
 <?php
     include_once("templates/footer.php")

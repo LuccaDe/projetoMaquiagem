@@ -3,18 +3,28 @@
 
 ?>
 
-<div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
 
-    <h1 id="main-title">Edição e Exclusão de Produtos</h1>
+  <a href="<?php $BASE_URL?>index.php" class="navbar-brand"><img src="img/logo.png" alt="Imagem logo"></a>
 
-    </br>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <nav class="navbar">
-      <h5>NAVEGAÇÃO PROVISÓRIA</h5>
-      <a href="<?php $BASE_URL?>index.php">INDEX</a>
-      <a href="<?php $BASE_URL?>create.php">CADASTRO DE PRODUTOS</a>
-      <a href="<?php $BASE_URL?>painel.php">EDIÇÃO E EXCLUSÃO DE PRODUTOS</a>
-    </nav>
+  <div class="collapse navbar-collapse" id="nav-target">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>index.php">Home</a> <!--tag de âncora-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>create.php">Cadastro de Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php $BASE_URL?>painel.php">Edição e Exclusão de Produtos</a>
+      </li>
+    </ul>
+  </div>
+</nav>	
 
     </br>
     </br>
@@ -23,9 +33,9 @@
 
           <?php foreach($produtos as $produto): ?>
 
-            <div class="card">
+            <div class="card cardP">
               <img src="<?= $produto["img"] ?>" class="card-img-top">
-              <div class="card-body">
+              <div class="card-body mt-5">
                 <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
                 <h4 class="card-subtitle">Valor: R$<?= $produto["valor"]?></h4>
 
@@ -36,7 +46,7 @@
                 <form class="delete-form" action="<?= $BASE_URL ?>/config/process.php" method="POST">
                   <input type="hidden" name="type" value="delete">
                   <input type="hidden" name="id" value="<?= $produto["id"] ?>">
-                  <button type="submit" class="btn btn-outline-danger" id="delete">Excluir</button>
+                  <button type="submit" class="btn btn-outline-danger mt-2">Excluir</button>
                 </form>
               </div>
           </div>

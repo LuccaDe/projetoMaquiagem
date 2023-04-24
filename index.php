@@ -90,7 +90,7 @@
   <div class="row">
     <?php foreach($produtos as $produto): ?>
     <div class="col-sm-1 col-md-3">
-      <div class="card" id="cardP">
+      <div class="card cardP">
         <img src="<?= $produto["img"]?>" class="card-img-top">
           <div class="card-body">
             <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
