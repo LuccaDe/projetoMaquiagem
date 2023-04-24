@@ -13,10 +13,9 @@ body{
     float: right;
 }
 
-.form-padrao{
-    width: 500px;
-    margin: 0 auto;
-    background-color: red;
+#prateleira{
+    border: 2px solid #f0bcbe;
+    padding: 5px;
 }
 
 .imagem-icon-desc
@@ -73,6 +72,7 @@ header{
 
 .conteudo-principal-imagem{
     width: 100%;
+    height: 592px;
 }
    
 .card-title{
@@ -102,7 +102,7 @@ h2{
 }
 
 #main-title{
-    color: #db33b7;
+    color: #f0bcbe;
     font-size:30px;
     text-align: center;
 }

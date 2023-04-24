@@ -20,7 +20,7 @@
 
         <div class="form-group">
             <label for="nome-produto">Nome do produto:</label>
-            <input class="form-control form-control" type="text" name="nome" id="nome-produto">
+            <input class="form-control" type="text" name="nome" id="nome-produto">
         </div>
 
         <div class="form-group">

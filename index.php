@@ -14,7 +14,28 @@
 </header>
 
 <section class="conteudo-principal" id="banner">
-  <img class="conteudo-principal-imagem" src="img/banner.jpg" alt="Propaganda base Fenty Beauty"   >
+  <div class="carousel slide" id="carousel-indicadores" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-indicadores" data-slide-to="0"></li>
+      <li data-target="#carousel-indicadores" data-slide-to="1"></li>
+      <li data-target="#carousel-indicadores" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="conteudo-principal-imagem" src="img/banner.jpg" alt="Propaganda gloss Pink Chilli">
+      </div>
+
+      <div class="carousel-item">
+      <img class="conteudo-principal-imagem" src="img/banner2.jpg" alt="Propaganda base Fenty Beauty">
+      </div>
+
+      <div class="carousel-item">
+      <img class="conteudo-principal-imagem" src="img/banner3.jpg" alt="Propaganda base Fenty Beauty">
+      </div>
+    </div>
+  </div>
 </section>
   
 <?php if(isset($printMsg) && $printMsg != ''): ?>
@@ -23,20 +44,20 @@
 
 <br/>
 
-<div class="row">
-  <div class="col-sm-1 col-md-4">
+<div class="d-flex">
+  <div>
     <img class="imagem-icon" src="img/ico-frete.webp" alt="Imagem ícon de frete">
     <div class="imagem-icon-desc">
       <p>Frete grátis para todo o Brasil</p>
     </div>
   </div>
-  <div class="col-sm-1 col-md-4">
+  <div class="mr-auto ml-auto">
     <img class="imagem-icon" src="img/ico-cartao-de-credito.webp" alt="Imagem ícon do cartão">
     <div class="imagem-icon-desc">
       <p>Parcelamos em até 12x s/juros</p>
     </div>
   </div>
-  <div class="col-sm-1 col-md-4">
+  <div>
     <img class="imagem-icon" src="img/ico-cadeado.webp" alt="Imagem ícon do cadeado">
     <div class="imagem-icon-desc">
       <p>Compra 100% segura</p>
@@ -46,31 +67,33 @@
 
 <br/>
 
-<div class="row">
-  <div class="col-12">
-    <h2 id="main-title">MEUS PRODUTOS</h1>
-  </div>
-</div>
-
-<br/>
-
-<?php if(count($produtos) > 0): ?>
-<div class="row">
-  <?php foreach($produtos as $produto): ?>
-  <div class="col-sm-1 col-md-3">
-    <div class="card">
-      <img src="<?= $produto["img"] ?>" class="card-img-top">
-        <div class="card-body">
-        <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
-        <h4 class="card-subtitle">Valor: R$<?= $produto["valor"]?></h4>
-
-        </br>
-
-          <a href="<?php $BASE_URL?>show.php?id=<?= $produto["id"] ?>" class="btn btn-outline-primary btn-rosa">Detalhes</a>
-        </div>
+<div id="prateleira">
+  <div class="row">
+    <div class="col-12">
+      <h2 id="main-title">MEUS PRODUTOS</h1>
     </div>
   </div>
-  <?php endforeach; ?>
+
+  <br/>
+
+  <?php if(count($produtos) > 0): ?>
+  <div class="row">
+    <?php foreach($produtos as $produto): ?>
+    <div class="col-sm-1 col-md-3">
+      <div class="card">
+        <img src="<?= $produto["img"] ?>" class="card-img-top">
+          <div class="card-body">
+          <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
+          <h4 class="card-subtitle">Valor: R$<?= $produto["valor"]?></h4>
+
+          </br>
+
+            <a href="<?php $BASE_URL?>show.php?id=<?= $produto["id"] ?>" class="btn btn-outline-primary btn-rosa">Detalhes</a>
+          </div>
+      </div>
+    </div>
+    <?php endforeach; ?>
+  </div>
 </div>
 <?php else: ?>
   </br>  
@@ -83,14 +106,16 @@
     <div class="conteudo-contato" id="contatos">              
       <h2>CONTATO</h2>            
       <form>
-        Nome:<br />
-        <input type="text" /><br />
-        E-mail:<br />
-        <input type="text" /><br />
-        Mensagem:<br />
-        <textarea> </textarea><br />
+        <label for="nome-contato">Nome:</label>
+        <input type="text" id="nome-contato" class="form-control">
+
+        <label for="email-contato">E-mail:</label>
+        <input type="text" id="email-contato" class="form-control">
+
+        <label for="msg-contato">Mensagem:</label>
+        <textarea id="msg-contato" class="form-control"></textarea>
               
-        <input type="submit" value="Enviar" /> 
+        <button type="submit" class="btn btn-outline-primary btn-rosa">Enviar</button>
               
       </form>
     </div>
