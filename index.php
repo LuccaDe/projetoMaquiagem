@@ -16,7 +16,7 @@
         <a class="nav-link" href="<?php $BASE_URL?>index.php">Home</a> <!--tag de âncora-->
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="quemSomos.html">Quem Somos</a>
+        <a class="nav-link" href="quemSomos.php">Quem Somos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#contatos">Contato</a>

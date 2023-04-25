@@ -42,7 +42,7 @@
 
         <div class="form-group">
             <label for="valor-produto">Valor(R$):</label>
-            <input class="form-control mr-auto ml-auto" type="number" name="valor" id="valor-produto" value="<?= $produto['valor']?>">
+            <input class="form-control mr-auto ml-auto" type="text" name="valor" id="valor-produto" value="<?= $produto['valor']?>">
         </div>
 
         <div class="form-group">

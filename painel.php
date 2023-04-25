@@ -35,7 +35,7 @@
 
             <div class="card cardP">
               <img src="<?= $produto["img"] ?>" class="card-img-top">
-              <div class="card-body mt-5">
+              <div class="card-body">
                 <h3 class="card-title">Nome: <?= $produto["nome"]?> </h3>
                 <h4 class="card-subtitle">Valor: R$<?= $produto["valor"]?></h4>
 
@@ -46,7 +46,7 @@
                 <form class="delete-form" action="<?= $BASE_URL ?>/config/process.php" method="POST">
                   <input type="hidden" name="type" value="delete">
                   <input type="hidden" name="id" value="<?= $produto["id"] ?>">
-                  <button type="submit" class="btn btn-outline-danger mt-2">Excluir</button>
+                  <button type="submit" class="btn btn-outline-danger mt-1">Excluir</button>
                 </form>
               </div>
           </div>

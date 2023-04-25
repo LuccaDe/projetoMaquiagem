@@ -255,3 +255,103 @@ input[type=submit]{
     padding: 10px;
     min-height: 600px;
 }
+
+/*quem somos*/
+
+.img-pag-quem-somos{
+    width: 500px;
+    height: 300px;
+}
+
+.titulo-pag-quem-somos{
+    text-align: center;
+    color: #f0bcbe;
+}
+
+.line-p{
+    line-height: 25px;
+    color:#494646;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.imagem-centralizada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.imagem-centralizada img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rodape{
+    background-color: #FFF2F9;
+    width: 100%;
+    height: auto;
+}
+.logo-rodape-quem-somos{
+    display: flex;
+}
+.logo-rodape-quem-somos p{
+    margin: 10% 3% 0 5%;
+    line-height: 30px;
+}
+.rodape-quem-somos-contatos, .rodape-quem-somos-email{
+    display: flex;
+}
+
+.rodape-quem-somos-contatos img, .rodape-quem-somos-email img{
+    width: 2.5%;
+    height: 2.5%;
+}
+.rodape-quem-somos-contatos p{
+    font-size: 115%;
+    margin-left: 5px;
+}
+.rodape-quem-somos-contatos a{
+    color: #494646;
+    text-decoration: none;
+}
+.rodape-quem-somos-email p{
+    margin: 0 0 0 5px;
+    font-size: 120%;
+    margin-bottom: 5%;
+}
+.rodape-quem-somos-email a{
+    color: #494646;
+    text-decoration: none;
+}
+.rodape-quem-somos-contatos a:hover{
+    color: rgb(235, 109, 130);
+} 
+.rodape-quem-somos-email a:hover{
+    color: rgb(235, 109, 130);
+}
+
+.telefone-bn-beauty{
+    color:#6A6A6B;
+}
+
+.email-bn-beauty{
+    color:#6A6A6B;
+}
+
+.nav-item{
+        color: #ecbcc4;
+        border-color: #ecbcc4;
+}
+    
+.nav-item:hover{
+        color: white;
+        background-color: #ecbcc4;
+        border-color: #ecbcc4;
+}
+
+.border-somos{
+    border: 2px solid #f0bcbe;
+    padding: 10px;
+}

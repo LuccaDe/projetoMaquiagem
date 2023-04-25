@@ -42,7 +42,7 @@
 
         <div class="form-group">
             <label for="valor-produto">Valor(R$):</label>
-            <input class="form-control mr-auto ml-auto" type="number" name="valor" id="valor-produto">
+            <input class="form-control mr-auto ml-auto" type="text" name="valor" id="valor-produto">
         </div>
 
         <div class="form-group">
@@ -50,7 +50,7 @@
             <input class="form-control mr-auto ml-auto" type="text" name="img" id="img-produto">
         </div>
 
-            <button type="submit" class="btn btn-outline-primary btn-rosa mt-3">Cadastrar</button>
+        <button type="submit" class="btn btn-outline-primary btn-rosa mt-3">Cadastrar</button>
     </form>
 </div>
 
